@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
+import Header from "./components/Header";
+
 const Wrapper = styled.div`
   width: 1024px;
   height: 100vh;
@@ -8,6 +10,11 @@ const Wrapper = styled.div`
   background-color: #f5f5f5;
 `;
 
-const App = () => <Wrapper>no content</Wrapper>;
+const App = () => (
+  <Wrapper>
+    <Header />
+    <div>no content</div>
+  </Wrapper>
+);
 
 export default App;
